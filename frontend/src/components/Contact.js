@@ -15,7 +15,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:3001/submit', formData);
+            await axios.post('https://portfolio-rfuk.onrender.com/submit', formData);
             alert('Send successfully');
             setFormData({ name: '', email: '', subject: '' }); // Clear form fields
         } catch (error) {
