@@ -3,7 +3,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-
+require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // MongoDB connection
-const mongoURI = 'mongodb://localhost:27017/contact'; // Use the same database name as mentioned earlier
+const mongoURI = process.env.MONGO_URI;
 mongoose.connect(mongoURI );
 
 const db = mongoose.connection;
