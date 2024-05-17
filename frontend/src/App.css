@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header ul li{
+  @apply px-2;
+}
+.bg-primary{
+  background-color: rgba(57, 66, 66, 0.856);
+  box-shadow: 10px 10px 10px rgba(157, 161, 161, 0.856);
+}
+.mobile-nav{
+  @apply fixed top-10 left-0 bg-gray-600 w-full h-1/6 ;
+}
+.mobile-nav  li{
+  @apply w-full h-full text-center border-b-2;
+}
+*{
+  font-family: Playfair Display;
+ 
+  
+}
+.box{
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(220, 221, 221, 0.856);
+}
+.border-radius{
+  border-radius: 50px;
+  box-shadow: 10px 10px 10px rgba(220, 221, 221, 0.856);
+  
+}
+
+.marginTop{
+	margin-top:-6px;
+}
+.resume:hover{
+  background-color:rgba(17, 19, 19, 0.856);
+}
+.projectList{
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(185, 189, 189, 0.856);
+  border: none;
+  background-color: rgba(126, 134, 134, 0.856);
+  
+}
+html{
+  scroll-behavior: smooth;
+  background-color: #f4f4f4;
+}
+.view{
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 10px 10px 10px rgba(185, 189, 189, 0.856);
+  
+}
