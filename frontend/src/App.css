@@ -56,3 +56,6 @@ html{
   box-shadow: 10px 10px 10px rgba(185, 189, 189, 0.856);
   
 }
+.customView:hover{
+  color: black;
+}

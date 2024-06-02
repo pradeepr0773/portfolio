@@ -6,11 +6,12 @@ import Skills from './components/Skills';
 import ProjectList from './components/ProjectList';
 import ProjectPreview from './components/ProjectPreview';
 import Contact from './components/Contact';
+import Certificate from './components/Certificate';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App'> 
     <Header />
        <Profile />
        <About />
@@ -21,6 +22,12 @@ function App() {
         <Route path="/preview/:projectId" element={<ProjectPreview />} />
         </Routes>
       </Router> 
+      <Router>
+            <Routes>
+                <Route path="/" element={<Certificate />} />
+            </Routes>
+        </Router>
+      
        <Contact />
     </div>
   );

@@ -4,6 +4,8 @@ import axios from 'axios';
 
 export default function ProjectList() {
     const [projects, setProjects] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         const fetchProjects = async () => {
@@ -11,12 +13,22 @@ export default function ProjectList() {
                 const response = await axios.get('https://portfolio-rfuk.onrender.com/projects');
                 setProjects(response.data);
             } catch (error) {
-                console.error('Error fetching projects:', error);
+                setError(error);
+            } finally {
+                setIsLoading(false);
             }
         };
 
         fetchProjects();
     }, []);
+
+    if (isLoading) {
+        return <div className='text-4xl border-b-4 mb-5 w-[290px] font-bold  m-5'> Projects Loading...</div>;
+    }
+
+    if (error) {
+        return <div>Error: {error.message}</div>;
+    }
 
     return (
         <div className="container mx-auto" id="project">

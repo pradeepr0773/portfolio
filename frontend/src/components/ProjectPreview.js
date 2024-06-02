@@ -28,7 +28,7 @@ export default function ProjectPreview() {
     return (
         <div className="container mx-auto gap-2" id="projectPreview">
             <h3 className="text-4xl border-b-4 mb-5 w-[270px] font-bold">Projects Preview</h3>
-            {loading && <p>Loading...</p>}
+            {loading && <p className='text-4xl'>Loading...</p>}
             {error && <p>{error}</p>}
             {project && (
                 <div className="p-5 border-2 projectList">
