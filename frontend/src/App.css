@@ -80,6 +80,14 @@ html{
   }
 }
 
+@media screen and (max-width: 770px) {
+  .custom-skills {
+    margin:3px;
+    padding:5px;
+    
+  }
+}
+
 
 
 @media screen and (max-width: 770px) {

@@ -28,6 +28,11 @@ export default function Skills(){
                     <div className="p-5 m-3 custom-skills "><SiMysql  size={40}/> <p >MYSQL</p></div>
             </div>
             <div className="flex border-2 p-5 m-3 projectList text-xl">
+
+
+
+
+                
                 <h3 ><BsGit size={40} /><p className="pb-3">Git</p>
                 <AiOutlineGithub  size={40} /><p className=" pb-3">Github</p>
                 <VscVscode size={40} /><p className=" pb-3">VsCode</p></h3>
