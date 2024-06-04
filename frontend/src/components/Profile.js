@@ -15,7 +15,7 @@ export default function Profile() {
                     <a href="https://github.com/pradeepr0773" target="_blank" rel="noopener noreferrer" className='pr-3 hover:text-gray-600'><AiOutlineGithub size={40} /></a>
                 </div>
                 <div className='text-center'>
-                    <a href="https://drive.google.com/file/d/1xUbtQf04QjFZU3b130tBN-aVX8Qrkdki/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="border-0 p-2 shadow-xl shadow-gray-500/50 rounded-full bg-gray-600 text-white text-2xl">Check Resume</a>
+                    <a href="https://drive.google.com/file/d/19kwjqyad2ESjdngZN2FoctSEVS_54zLg/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="border-0 p-2 shadow-xl shadow-gray-500/50 rounded-full bg-gray-600 text-white text-2xl">Check Resume</a>
                 </div>
             </div>
             <img className='md:w-1/4 custom-photo shadow-2xl shadow-cyan-500/50 rounded-full custom-phone-view' src={Me} alt="Pradeep" />
