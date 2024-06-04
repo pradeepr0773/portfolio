@@ -10,7 +10,7 @@ header ul li{
   box-shadow: 10px 10px 10px rgba(157, 161, 161, 0.856);
 }
 .mobile-nav{
-  @apply fixed top-10 left-0 bg-gray-600 w-full h-1/6 ;
+  @apply fixed top-10 left-0 bg-gray-600 w-full  ;
 }
 .mobile-nav  li{
   @apply w-full h-full text-center border-b-2;
@@ -59,3 +59,44 @@ html{
 .customView:hover{
   color: black;
 }
+.custom-phone-view {
+    
+  padding: 8px;
+  
+}
+
+@media screen and (max-width: 940px) {
+  .custom-photo {
+    width: 200px;
+    align-self: center;
+    
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .custom-phone-view {
+    margin-top: 20px;
+    
+  }
+}
+
+
+
+@media screen and (max-width: 770px) {
+  .custom-cer {
+    display: flex;
+    flex-direction:column;
+    align-self: center;
+  }
+  .customView{
+    padding: 2px;
+    margin-top: 10px;
+    
+  }
+  .custom-cer li::before {
+    content: '\2605'; /* Unicode character for a star */
+    margin-right: 5px; /* Adjust spacing between the star and the list item */
+  }
+  
+}
+

@@ -1,3 +1,4 @@
+import '../App.css'
 import Me from '../assets/me.jpg'
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiOutlineGithub } from "react-icons/ai";
@@ -17,7 +18,7 @@ export default function Profile() {
                     <a href="https://drive.google.com/file/d/1xUbtQf04QjFZU3b130tBN-aVX8Qrkdki/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="border-0 p-2 shadow-xl shadow-gray-500/50 rounded-full bg-gray-600 text-white text-2xl">Check Resume</a>
                 </div>
             </div>
-            <img className='md:w-1/5 shadow-2xl shadow-cyan-500/50 rounded-full' src={Me} alt="Pradeep" />
+            <img className='md:w-1/4 custom-photo shadow-2xl shadow-cyan-500/50 rounded-full custom-phone-view' src={Me} alt="Pradeep" />
         </section>
     );
 }
